@@ -42,6 +42,19 @@
     <input type="radio" name="fruit" id="fruit01" value="芒果(一箱)">芒果(一箱) 101元><br>
     <input type="radio" name="fruit" id="fruit02" value="芒(一箱)">芒(一箱) 101元><br>
     <input type="radio" name="fruit" id="fruit03" value="果(一箱)">果(一箱) 101元><br>
+</from>
+<br>
+<button onclick="shoppingInfo()"><h4>結帳</h4></button>
+<div id="demo"></div>
+<script>
+	function shoppingInfo() {
+		const x = document.getElemenById("form01");
+		var item = "";
+		var price = 0;
+		var text = "<h4>您的購物資訊如下</h4>"
+		var i;
+		for (i = 0; i < 5; i++) {
+			switch (i) {
 <script>
     var myName = "朱逸懋";
     var myAge = 20;
