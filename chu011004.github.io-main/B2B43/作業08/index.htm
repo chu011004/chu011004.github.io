@@ -74,6 +74,20 @@
 			text += item + x.elements[i].value +"<br>";
 		}
 		for (i = 5; i <= 7; i++) {
+			if (x.elements[i].checked == true) {
+				swictch (i) {
+					case 5:
+					price = 101;
+					break;
+					case 6:
+					price = 101;
+					break;
+					case 7:
+					price = 101;
+					break;
+				}
+				text += "種類:" + x.elements[i].value + "<br>";
+				text += "價格合計:" + x.elements[i].value + "<br>";
 
 <script>
     var myName = "朱逸懋";
