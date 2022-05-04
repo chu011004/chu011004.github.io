@@ -45,7 +45,7 @@
 <div id="demo"></div>
 <script>
 	function shoppingInfo() {
-		const x = document.getElemenById("form01");
+		const x = document.getElementById("form01");
 		var item = "";
 		var price = 0;
 		var text = "<h4>您的購物資訊如下</h4>";
@@ -68,7 +68,7 @@
 					item = "指定送貨日期: ";
 					break;
 			}
-			text += item + x.elements[i].value +"<br>";
+			text += item + x.elements[i].value + "<br>";
 		}
 		for (i = 5; i <= 7; i++) {
 			if (x.elements[i].checked == true) {
