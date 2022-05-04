@@ -37,8 +37,8 @@
     <input type="date" name="name01"><br>
 	<label>水果種類:(三選一)</label><br>
     <input type="radio" name="fruit" id="fruit01" value="紅豆麻糬(一箱)">紅豆麻糬(一箱) 799元><br>
-    <input type="radio" name="fruit" id="fruit02" value="芝麻麻糬(一箱)">黑糖麻糬(一箱) 699元><br>
-    <input type="radio" name="fruit" id="fruit03" value="花生麻糬(一箱)">花生麻糬(一箱) 599元><br>
+    <input type="radio" name="fruit" id="fruit02" value="芝麻麻糬(一箱)">黑糖麻糬(一盒) 699元><br>
+    <input type="radio" name="fruit" id="fruit03" value="花生麻糬(一箱)">花生麻糬(一顆) 599元><br>
 </from>
 <br>
 <button onclick="shoppingInfo()"><h4>結帳</h4></button>
@@ -48,7 +48,7 @@
 		const x = document.getElemenById("form01");
 		var item = "";
 		var price = 0;
-		var text = "<h4>您的購物資訊如下</h4>"
+		var text = "<h4>您的購物資訊如下</h4>";
 		var i;
 		for (i = 0; i < 5; i++) {
 			switch (i) {
@@ -74,16 +74,16 @@
 			if (x.elements[i].checked == true) {
 				swictch (i) {
 					case 5:
-					price = 101;
+					price = 799;
 					break;
 					case 6:
-					price = 101;
+					price = 699;
 					break;
 					case 7:
-					price = 101;
+					price = 599;
 					break;
 				}
-				text += "種類:" + x.elements[i].value + "<br>";
+				text += "麻糬口味:" + x.elements[i].value + "<br>";
 				text += "價格合計:" + price + "元<br>";
 				}
 		}
