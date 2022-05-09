@@ -16,6 +16,24 @@
 </head>
 
 <body>
+<form id="from01">
+        <label>帶輸入的資料個數為</label>
+    <input type="number" name="name01" placeholder="0"><br>
+</form>
+<button onclick="inputNo()">產生輸入表格</button>
+<div id="demo01"></div>
+<div id="demo02"></div>
+
+<script>
+    var no = 0;
+    function inputNo(){
+	    const x = document.getElementById("from01");
+	    var item = x.elements[0].value;
+	    no = item;
+	    text01 = "<form id=\"from02\">"
+	    for(i = 0; i < item; i++)
+	    text01 += i + ". ";
+
 
 <script>
     var myName = "朱逸懋";
