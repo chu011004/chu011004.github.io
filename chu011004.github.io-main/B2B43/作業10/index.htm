@@ -31,8 +31,15 @@
 	    var item = x.elements[0].value;
 	    no = item;
 	    text01 = "<form id=\"from02\">"
-	    for(i = 0; i < item; i++)
-	    text01 += i + ". ";
+	    for(i = 1; i <= item; i++){
+		    text01 += i + ". ";
+		    text01 += "<input type=\"text\">" + "<br>";
+	    }
+	    text01 += "</form>";
+	    text01 += "<button onclick=\"stat()\">計算統計量</button>";
+	    document.getElementById("demo01").innerHTML = text01;
+    }
+
 
 
 <script>
