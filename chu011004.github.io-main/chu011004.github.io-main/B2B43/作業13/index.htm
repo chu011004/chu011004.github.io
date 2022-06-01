@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <title>作業07</title>
+    <style>
+        h4 {
+            color: red;
+        }
+        p {
+            margin: 5px;
+        }
+        div {
+            color: blue;
+        }
+        table {
+			width: 90%;
+			border-color: dodgerblue;
+			border-style:solid;
+            border-collapse: collapse;
+		}
+		th {
+			text-align: center;
+			border-color: dodgerblue;
+			border-style:solid;
+		}
+		tr {
+			text-align: center;
+			border-color: dodgerblue;
+			border-style:solid;
+		}
+		td {
+			vertical-align: middle;
+			border-color: dodgerblue;
+			border-style:solid;
+		}
+    </style>
+
+</head>
+
+<body>
+<script>
+    var myName = "朱逸懋";
+    var myAge = 20;
+    var myHeight = 170; myWeight = 58;
+    document.write("<p>1.我是B2B43, " + myName + "</p>");
+    document.write("<p><h4>2.大家好！我最喜歡吃的水果是橘子</h4></p>");
+    document.write("<div>以下為變數設定練習</div>");
+    document.write("<p>3.我是" + myName + "，今年" + myAge + "歲" + "</p>");
+    document.write("<p>4.我的身高為" + myHeight + "公分，" + "我的體重為" + myWeight + "公斤" + "</p>");
+    document.write("<p>5.所以我的BMI為" + myWeight / Math.pow((myHeight/100),2)  + "</p>");
+    document.write("<div>以下for計次迴圈控制</div>");
+    var sum = 0;
+    for (i=1;i<=100;i++){
+        sum += i;
+    }
+    document.write("<p>6.從1加到100的總和為" + sum);
+    var count = 6;
+    function showSum(endNo){
+        var sum = 0;
+        for (i=1;i<=endNo;i++){
+            sum += i;
+        }
+        count += 1;
+        document.write("<p>"+ count + ".從1加到" + endNo + "的總和為" + sum + "</p>");
+    }
+    showSum(10);
+    showSum(100);
+    showSum(1000);
+    showSum(10000);
+    document.write("<div>以下為九九乘法表</div>");
+
+    function nTimesNtable(n){
+        for (i=1;i<=n;i++){
+            for (j=1;j<=n;j++){
+                document.write(i + "X" + j + "=" + i*j + "  ");
+            }
+	document.write("<br>");
+        }
+    }
+    nTimesNtable(9);
+
+</script>
+	<h4>九九乘法表</h4> 
+<table>
+		<tr>
+			<th>1X1=1</th>
+			<th>1X2=2</th>
+			<th>1X3=3</th>
+			<th>1X4=4</th>
+			<th>1X5=5</th>
+			<th>1X6=6</th>
+			<th>1X7=7</th>
+			<th>1X8=8</th>
+			<th>1X9=9</th>
+		</tr>
+	<tr>
+			<th>2X1=2</th>
+			<th>2X2=4</th>
+			<th>2X3=6</th>
+			<th>2X4=8</th>
+			<th>2X5=10</th>
+			<th>2X6=12</th>
+			<th>2X7=14</th>
+			<th>2X8=16</th>
+			<th>2X9=18</th>
+		</tr>
+	<tr>
+			<th>3X1=3</th>
+			<th>3X2=6</th>
+			<th>3X3=9</th>
+			<th>3X4=12</th>
+			<th>3X5=15</th>
+			<th>3X6=18</th>
+			<th>3X7=21</th>
+			<th>3X8=24</th>
+			<th>3X9=27</th>
+		</tr>
+	<tr>
+			<th>4X1=4</th>
+			<th>4X2=8</th>
+			<th>4X3=12</th>
+			<th>4X4=16</th>
+			<th>4X5=20</th>
+			<th>4X6=24</th>
+			<th>4X7=28</th>
+			<th>4X8=32</th>
+			<th>4X9=36</th>
+		</tr>
+	<tr>
+			<th>5X1=5</th>
+			<th>5X2=10</th>
+			<th>5X3=15</th>
+			<th>5X4=20</th>
+			<th>5X5=25</th>
+			<th>5X6=30</th>
+			<th>5X7=35</th>
+			<th>5X8=40</th>
+			<th>5X9=45</th>
+		</tr>
+	<tr>
+			<th>6X1=6</th>
+			<th>6X2=12</th>
+			<th>6X3=18</th>
+			<th>6X4=24</th>
+			<th>6X5=30</th>
+			<th>6X6=36</th>
+			<th>6X7=42</th>
+			<th>6X8=48</th>
+			<th>6X9=54</th>
+		</tr>
+	<tr>
+			<th>7X1=7</th>
+			<th>7X2=14</th>
+			<th>7X3=21</th>
+			<th>7X4=28</th>
+			<th>7X5=35</th>
+			<th>7X6=42</th>
+			<th>7X7=49</th>
+			<th>7X8=56</th>
+			<th>7X9=63</th>
+		</tr>
+	<tr>
+			<th>8X1=8</th>
+			<th>8X2=16</th>
+			<th>8X3=24</th>
+			<th>8X4=36</th>
+			<th>8X5=40</th>
+			<th>8X6=48</th>
+			<th>8X7=56</th>
+			<th>8X8=64</th>
+			<th>8X9=72</th>
+		</tr>
+	<tr>
+			<th>9X1=9</th>
+			<th>9X2=18</th>
+			<th>9X3=27</th>
+			<th>9X4=36</th>
+			<th>9X5=45</th>
+			<th>9X6=54</th>
+			<th>9X7=63</th>
+			<th>9X8=72</th>
+			<th>9X9=81</th>
+		</tr>
+		</table>
+</body>
+
+</html>
